@@ -28,9 +28,9 @@ const formFieldFill = () => {
   for (const key in userFormInfo) {
     if (userFormInfo.hasOwnProperty(key)) {
       form.elements[key].value = userFormInfo[key];
-        if (userFormInfo[key]) {
-            user[key] = userFormInfo[key];
-        }
+      if (userFormInfo[key]) {
+        user[key] = userFormInfo[key];
+      }
     }
   }
 };
@@ -43,6 +43,7 @@ const formSubmitEl = event => {
   form.reset();
 
   localStorage.removeItem('feedback-form-state');
+  console.log(user);
 };
 
 form.addEventListener('submit', formSubmitEl);

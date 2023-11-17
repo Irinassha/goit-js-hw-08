@@ -25,7 +25,6 @@ galleryUl.style.listStyle = 'none';
 
 galleryUl.innerHTML = galleruImg;
 
-// import simplelightbox from '../../package.json';
 
 var lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
